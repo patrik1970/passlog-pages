@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="sv">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="referrer" content="no-referrer" />
+    <!-- Fristående sida utan externa resurser. Platshållarna i [hakparenteser] fylls i av ägaren före publicering. -->
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'none'; style-src 'unsafe-inline'; base-uri 'none'; form-action 'none'"
+    />
+    <title>Integritetspolicy – Passlogg</title>
+    <style>
+      :root {
+        --text: #1d241f;
+        --muted: #55605a;
+        --background: #f5f3ec;
+        --accent: #2f5d3a;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --text: #e6e8e3;
+          --muted: #a9b2ab;
+          --background: #111712;
+          --accent: #8fc49c;
+        }
+      }
+      body {
+        margin: 0;
+        padding: 0 16px 48px;
+        background: var(--background);
+        color: var(--text);
+        font:
+          17px/1.55 system-ui,
+          -apple-system,
+          'Segoe UI',
+          Roboto,
+          sans-serif;
+      }
+      main {
+        max-width: 42rem;
+        margin: 0 auto;
+      }
+      h1 {
+        margin: 40px 0 4px;
+        color: var(--accent);
+      }
+      h2 {
+        margin-top: 32px;
+        font-size: 1.2rem;
+      }
+      .meta {
+        color: var(--muted);
+        margin: 0 0 24px;
+      }
+      .summary {
+        border-left: 4px solid var(--accent);
+        padding: 4px 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Integritetspolicy för Passlogg</h1>
+      <p class="meta">Gäller Passlogg för Android, version 1.0. Senast ändrad [DATUM].</p>
+
+      <p class="summary">
+        <strong>Kort sagt:</strong> Passlogg samlar inte in någon data om dig. Allt du skriver in stannar på
+        din telefon och sparas krypterat. Appen har inget konto och skickar ingenting över internet.
+      </p>
+
+      <h2>Vem ansvarar</h2>
+      <p>Passlogg utvecklas av [ÄGARENS NAMN]. Kontakt: [E-POSTADRESS].</p>
+
+      <h2>Vilken data appen hanterar</h2>
+      <p>
+        Appen sparar bara det du själv lägger in: dina pass (namn, typ och position), dina jaktpass (tid,
+        vind, väder, utfall och anteckningar), observationer och foton.
+      </p>
+
+      <h2>Var datan finns</h2>
+      <ul>
+        <li>All data lagras <strong>bara på din telefon</strong>, i en databas som krypteras med AES-256.</li>
+        <li>
+          Krypteringsnyckeln skapas på telefonen och förvaras i telefonens säkra nyckellager (Android
+          Keystore).
+        </li>
+        <li>Datan ingår inte i Googles molnbackup.</li>
+      </ul>
+
+      <h2>Vad appen inte gör</h2>
+      <ul>
+        <li>Den skickar ingenting över internet. Appen saknar behörighet att använda nätverket.</li>
+        <li>
+          Den har inga konton, ingen inloggning, ingen server, ingen analys eller statistikinsamling, ingen
+          reklam, ingen spårning och ingen kraschrapportering till tredje part.
+        </li>
+        <li>Den säljer eller delar ingen data med någon.</li>
+      </ul>
+
+      <h2>Position</h2>
+      <p>
+        Appen använder telefonens position bara när du själv sparar var ett pass ligger och för att visa
+        avståndet till dina pass, och bara medan appen används. Positionen sparas på telefonen och skickas
+        aldrig någonstans.
+      </p>
+
+      <h2>Foton</h2>
+      <p>
+        Foton till ett jaktpass sparas krypterade i appen, aldrig i telefonens bildgalleri. Innan ett foto
+        sparas ritas det om, så att platsuppgifter och annan metadata försvinner. Kameran används bara när du
+        själv trycker "Ta foto". Väljer du en bild ur galleriet får appen bara tillgång till just den bilden.
+      </p>
+
+      <h2>Backup</h2>
+      <p>
+        Du kan själv skapa en backup. Filen krypteras med AES-256 och en lösenfras som du väljer, och du
+        väljer själv var den sparas via telefonens delningsdialog. Appen skickar inget själv. När du sparar
+        eller delar filen ansvarar du för den, till exempel var du sparar den och vem du delar den med.
+        Glömmer du lösenfrasen går filen inte att öppna, inte ens för oss. Filen skapas i appens tillfälliga
+        lagring och raderas när den har delats.
+      </p>
+
+      <h2>Synpunkter via e-post</h2>
+      <p>
+        "Skicka synpunkter" öppnar din egen e-postapp med ett förifyllt ämne och appens versionsnummer.
+        Ingenting från dagboken bifogas. Om du skickar e-postmeddelandet får vi din e-postadress och det du
+        skriver. Vi använder det bara för att svara dig och sparar det inte längre än behövs för det.
+      </p>
+
+      <h2>Radering</h2>
+      <p>
+        Avinstallerar du appen raderas all data och krypteringsnyckeln. Det går inte att återställa, eftersom
+        ingen kopia finns någon annanstans än i de backuper du själv har gjort.
+      </p>
+
+      <h2>Barn</h2>
+      <p>Passlogg riktar sig till vuxna och är inte avsedd för barn.</p>
+
+      <h2>Ändringar</h2>
+      <p>
+        Om appen ändras så att något i den här policyn inte längre stämmer, uppdateras policyn innan den nya
+        versionen publiceras. Datumet överst visar när den senast ändrades.
+      </p>
+    </main>
+  </body>
+</html>
